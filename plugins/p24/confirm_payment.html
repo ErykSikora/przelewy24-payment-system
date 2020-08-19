@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            font-family: "Open Sans",sans-serif;
+            color: #4e4e4e;
+        }
+        .date {text-align: right;}
+        .logoTxt {text-align: left; font-size: 22px;}
+        .logoTxt a {color: #FF4343; text-decoration: none;}
+        .box {width: 900px; margin: 0 auto; border-radius: 3px; padding: 30px;}
+        table {width: 100%;}
+        table tr td:first-child{width: 35%}
+        table tr td:last-child{width: 65%; background: #F2F2F2; border-radius: 3px; padding:10px 15px; color: #000;}
+        small {padding: 10px 0; display: block; margin-top: 10px;}
+        @media only screen and (max-width: 950px) {
+            .box {width: 90% !important;}
+            table tr td:first-child{text-align: center; padding: 10px!important;}
+            table tr td {display: block; width: calc(100% - 30px)!important;}
+        }
+        .oplac {
+            padding: 10px;
+            max-width: 200px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #ff4343;
+            border: none;
+            border-bottom: 5px solid #ff1010;
+            color: #fff;
+            letter-spacing: .2px;
+            font-size: 16px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <p class="date">*miejscowosc*, *data*</p> -->
+        <h1 class="logoTxt">Wpłata dla Parafii: <a href="*root*">*parafia*</a></h1>
+        <p>Dziękujemy Ci za deklarację wpłaty.<br><strong>Jeżeli płatność nie została ukończona, kliknij w poniższy przycisk:</strong></p>
+        <a class="oplac" href="*oplac*">Opłać</a>
+        <p>lub w bezpośredni link do płatności: <a href="*oplac*">*oplac*</a></p>
+        <p>Poniżej podsumowanie zostawionych przez Ciebie informacji.</p>
+        <hr>
+        <table>
+            <tr><td>Parafia:</td><td>*parafia*</td></tr>
+            <tr><td>Kwota: </td><td>*amount* zł</td></tr>
+            <tr><td>Wpłacający: </td><td>*fullname*</td></tr>
+            <tr><td>E-mail wpłacającego:</td><td>*email*</td></tr>
+        </table>
+        <p><strong>Bóg Zapłać za Twoją ofiarę.</strong><br>*ksiadz*, *telefon*</p>
+        <small>Wiadomość została wygenerowana automatycznie. Prosimy nie odpowiadać.<br>Wysłano ze strony: <a href="*root*">*root*</a></small>
+    </div>
+</body>
+</html>

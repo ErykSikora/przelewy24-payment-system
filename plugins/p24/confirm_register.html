@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            font-family: 'Muli', sans-serif;
+        }
+        .logo svg {max-height: 50px; display: block; margin: 0 auto;}
+        .logoTxt {text-align: left; color: #444; font-size: 22px;}
+        .logoTxt a {color: #B40001; text-decoration: none;}
+        .box {width: 900px; margin: 0 auto; border-radius: 3px; padding: 40px 30px;}
+        table {width: 100%;}
+        table ul {list-style-type: circle; margin: 0;}
+/*        table tr td{padding: 9px 7px;}*/
+        table tr td:first-child{width: 35%}
+        table tr td:last-child{width: 65%; background: #F2F2F2; border-radius: 3px; padding:10px 15px;}
+        small {padding: 10px; display: block; margin-top: 10px;}
+        @media only screen and (max-width: 950px) {
+            .box {width: 85% !important;}
+            table tr td:first-child{text-align: center; padding: 10px!important;}
+            table tr td {display: block; width: calc(100% - 30px)!important;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <h1 class="logoTxt">Zarejestrowałeś swoją parafię: <a href="*root*">*parafia*</a></h1>
+       <p>Dziękujemy za rejestrację w naszym serwisie. Wprowadzone przez Ciebie dane trafiły do operatora płatności - Przelewy24.</p>
+       <p>Czekaj na kontakt ze strony operatora, uzgodni z Tobą warunki umowy oraz aktywuje konto do rozliczeń.<br>Po tym procesie zespół yourdomain.pl otrzyma Twoje dane i zbiórka zostanie utworzona na stronie yourdomain.pl.</p>
+       <p>Poniżej podsumowanie zostawionych przez Ciebie informacji:</p>
+       <hr>
+        <table>
+            <tr><td>Parafia:</td><td>*parafia*</td></tr>
+            <tr><td>Adres</td><td>*ulica*, *kodpocztowy* *miejscowosc*</td></tr>
+            <tr><td>NIP</td><td>*nip*</td></tr>
+            <tr><td>REGON</td><td>*regon*</td></tr>
+            <tr><td>Przedstawiciel:</td><td>*przedstawiciel*</td></tr>
+            <tr><td>Numer telefonu:</td><td>*telefon*</td></tr>
+            <tr><td>Adres e-mail:</td><td>*email*</td></tr>
+            <tr><td>Rachunek:</td><td>*rachunek*</td></tr>
+        </table>
+        <small>Wiadomość została wygenerowana automatycznie. Prosimy nie odpowiadać. Wysłano ze strony: <a href="*site*">*site*</a></small>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            font-family: 'Muli', sans-serif;
+        }
+        .logo svg {max-height: 50px; display: block; margin: 0 auto;}
+        .logoTxt {text-align: left; color: #444; font-size: 22px;}
+        .logoTxt a {color: #B40001; text-decoration: none;}
+        .box {width: 900px; margin: 0 auto; border-radius: 3px; padding: 40px 30px;}
+        table {width: 100%;}
+        table ul {list-style-type: circle; margin: 0;}
+/*        table tr td{padding: 9px 7px;}*/
+        table tr td:first-child{width: 35%}
+        table tr td:last-child{width: 65%; background: #F2F2F2; border-radius: 3px; padding:10px 15px;}
+        small {padding: 10px; display: block; margin-top: 10px;}
+        @media only screen and (max-width: 950px) {
+            .box {width: 85% !important;}
+            table tr td:first-child{text-align: center; padding: 10px!important;}
+            table tr td {display: block; width: calc(100% - 30px)!important;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <h1 class="logoTxt">Wpłata dla Parafii: <a href="*root**alias*">*parafia*</a></h1>
+       <p>Wpłynęła kolejna deklaracja wpłaty na tacę. Poniżej dane wiernego:</p>
+       <hr>
+        <table>
+            <tr><td>Działalność:</td><td>*parafia*</td></tr>
+            <tr><td>Kwota: </td><td>*amount* zł</td></tr>
+            <tr><td>Wpłacający: </td><td>*fullname*</td></tr>
+            <tr><td>E-mail wpłacającego:</td><td>*email*</td></tr>
+        </table>
+        <small>Wiadomość została wygenerowana automatycznie. Prosimy nie odpowiadać. Wysłano ze strony: <a href="*site*">*site*</a></small>
+    </div>
+</body>
+</html>

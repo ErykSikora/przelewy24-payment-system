@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-family: "Open Sans",sans-serif;
+    color: #4e4e4e;
+}
+.date {text-align: right;}
+.logoTxt {text-align: left; font-size: 22px;}
+.logoTxt a {color: #FF4343; text-decoration: none;}
+.box {width: 900px; margin: 0 auto; border-radius: 3px; padding: 30px;}
+table {width: 100%;}
+table tr td:first-child{width: 35%}
+table tr td:last-child{width: 65%; background: #F2F2F2; border-radius: 3px; padding:10px 15px; color: #000;}
+small {padding: 10px 0; display: block; margin-top: 10px;}
+@media only screen and (max-width: 950px) {
+    .box {width: 90% !important;}
+    table tr td:first-child{text-align: center; padding: 10px!important;}
+    table tr td {display: block; width: calc(100% - 30px)!important;}
+}
+.oplac {
+    padding: 10px;
+    max-width: 200px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #ff4343;
+    border: none;
+    border-bottom: 5px solid #ff1010;
+    color: #fff;
+    letter-spacing: .2px;
+    font-size: 16px;
+    margin: 30px 0;
+}
